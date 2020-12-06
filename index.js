@@ -1,8 +1,8 @@
 const express = require('express');
-const sqlite3 = require("sqlite3").verbose;
+const sqlite3 = require("sqlite3").verbose();
 const bodyParser = require("body-parser");
 
-const db = new sqlite3.Database("./db/shoutbox.de");
+const db = new sqlite3.Database("./db/shoutbox.db");
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -14,15 +14,16 @@ app.use('/public', express.static(process.cwd() + '/public'));
 app.get('/', function(req, res) {
   const pageTitle = 'This is a title';
   let databaseData;
-  
-  db.all("SELECT * FROM SHOUTS", (err, rows) => {
-	  if (err){
-		  throw err
-	  }
-  res.render('pages/index', {
-    title: pageTitle,
-    data: anArrayOfData
-	});
+
+  db.all("SELECT * from shouts",(err,rows) => {
+    if(err){
+      throw err
+    }
+    res.render('pages/index', {
+      title: pageTitle,
+      data: rows,
+    });
+    console.log(rows);
   });
 });
 
