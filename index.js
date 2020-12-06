@@ -1,5 +1,7 @@
 const express = require('express');
+const sqlite3 = require("sqlite3").verbose;
 
+const db = new sqlite3.Database("./db/shoutbox.de");
 const port = process.env.PORT || 3000;
 const app = express();
 
