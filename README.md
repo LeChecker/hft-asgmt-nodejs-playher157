@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/hft-stuttgart-ipr/hft-asgmt-nodejs-playher157.svg?branch=master)](https://travis-ci.org/hft-stuttgart-ipr/hft-asgmt-nodejs-USERNAME)
+[![Build Status](https://travis-ci.org/hft-stuttgart-ipr/hft-asgmt-nodejs-playher157.svg?branch=master)](https://travis-ci.org/hft-stuttgart-ipr/hft-asgmt-nodejs-playher157)
 
 # hft-asgmt-nodejs
 
