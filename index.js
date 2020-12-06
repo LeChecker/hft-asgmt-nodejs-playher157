@@ -1,5 +1,6 @@
 const express = require('express');
 const sqlite3 = require("sqlite3").verbose;
+const bodyParser = require("body-parser");
 
 const db = new sqlite3.Database("./db/shoutbox.de");
 const port = process.env.PORT || 3000;
