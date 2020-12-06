@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/hft-stuttgart-ipr/hft-asgmt-nodejs-playher157.svg?branch=master)](https://travis-ci.org/hft-stuttgart-ipr/hft-asgmt-nodejs-playher157)
+![GitHub Classroom Workflow](https://github.com/hft-stuttgart-ipr/hft-asgmt-nodejs-playher157/workflows/GitHub%20Classroom%20Workflow/badge.svg)
 
 # hft-asgmt-nodejs
 
