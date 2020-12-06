@@ -12,7 +12,12 @@ app.use('/public', express.static(process.cwd() + '/public'));
 app.get('/', function(req, res) {
   const pageTitle = 'This is a title';
   const anArrayOfData = ['This', 'is', 'something', 'to', 'loop'];
-
+  
+  db.all("SELECT * FROM SHOUTS", (err, rows) => {
+	  if (err){
+		  throw err;
+	  }
+	  databaseData = rows;
 
   res.render('pages/index', {
     title: pageTitle,
